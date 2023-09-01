@@ -19,14 +19,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.header nav ul li a:hover{
-    color: rgb(35, 86, 255);
-    background-image: radial-gradient(currentColor, currentColor);
-    background-position: 50% 100%;
-    background-size: 0% 0%, 2.5px;
-}
 .mapa-tecnica{
-    width: 100%;
+    display: flex;
+    margin-left: auto;
     border-radius: 10px;
 }
 .seccion-contacto{
@@ -49,12 +44,6 @@ body{
 }
 .footer{
     max-width: 100%;
-}
-
-.imgCarousel{
-    max-width: 1600px;
-    max-height: 900px;
-    margin: auto;
 }
 .main{
     margin-top: 10px;
@@ -90,6 +79,7 @@ body{
     width: 100%;
     height: 100%;
     background-size: cover;
+    background-size: auto;
     background-position: center;
     position: absolute;
     opacity: 0;
@@ -173,4 +163,69 @@ body{
         opacity: 0;
     }
 
+}
+.imagenTarjeta{
+    width: 75%;
+    border-radius: 20px;
+}
+.niveles-container{
+    margin-top: 20px;
+}
+.niveles-container div p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.div-principal-Niveles{
+    margin-top: 20px;
+    overflow-x: hidden;
+}
+.una{
+    transition: 1s;
+}
+.una:hover{
+    width: 80%;
+}
+.container-historia{
+    margin-top: 10px;
+    overflow-x: hidden;
+}
+.container-historia h2{
+    margin-bottom: 10px;
+}
+.container-historia .col-lg-5{
+    text-align: end;
+}
+.container-historia .col-lg-5 img{
+    border-radius: 25px;
+    width: 90%;
+    transition: 1s;
+}
+.container-historia .col-lg-5 .unaZ:hover{
+    width: 94%;
+}
+@media(max-width:1024px){
+    .container-historia{
+        margin-bottom: 40px;
+    }
+    .container-historia .col-lg-7 h2{
+        text-align: center;
+    }
+    .container-historia .col-lg-7 p{
+        text-align: center;
+    }
+    .container-historia .col-lg-5{
+        text-align: center;
+    }
+}
+.h2-bienvenida{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    height: 100%;
+    font-size: 20px;
+    
 }

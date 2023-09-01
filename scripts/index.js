@@ -13,9 +13,13 @@ document.getElementById('body').addEventListener('click', (e) => {
         document.getElementsByClassName('menu')[0].classList.toggle('open');
         document.getElementsByClassName('menu')[1].classList.toggle('open');
         document.getElementsByClassName('menu')[2].classList.toggle('open');
+        document.getElementsByClassName('menu')[3].classList.toggle('open');
+        document.getElementsByClassName('menu')[4].classList.toggle('open');
         document.getElementsByClassName('logo-tecnica')[0].classList.toggle('borrar')
         document.getElementsByClassName('logo-tecnica')[1].classList.toggle('borrar')
         document.getElementsByClassName('logo-tecnica')[2].classList.toggle('borrar')
+        document.getElementsByClassName('logo-tecnica')[3].classList.toggle('borrar')
+        document.getElementsByClassName('logo-tecnica')[4].classList.toggle('borrar')
     }
 })
 const prev = document.querySelector(".prev");
@@ -42,6 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
   setInterval(() => {
     activeIndex = (activeIndex + 1) % items.length;
     showItem(activeIndex);
-  },3000)
+  },4500)
 
 
