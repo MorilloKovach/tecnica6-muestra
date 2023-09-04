@@ -21,6 +21,7 @@ body {
     background-size: cover;
     font-family: 'Josefin Sans', sans-serif;
 }
+<<<<<<< HEAD
 
 .mapa-tecnica {
     display: flex;
@@ -28,6 +29,14 @@ body {
 }
 
 .seccion-contacto {
+=======
+.mapa-tecnica{
+    display: flex;
+    margin-left: auto;
+    border-radius: 10px;
+}
+.seccion-contacto{
+>>>>>>> b96cc1e9f2006218cd25039be528c4ed2eaf2adf
     margin-top: 10px;
     color: white;
     padding: 10px;
@@ -47,6 +56,7 @@ body {
 .seccion-contacto .contacto-facebook p:last-of-type {
     font-size: 24px;
 }
+<<<<<<< HEAD
 
 .seccion-contacto .contacto-facebook p:last-of-type a i {
     font-size: 24px;
@@ -64,6 +74,9 @@ body {
 }
 
 .main {
+=======
+.main{
+>>>>>>> b96cc1e9f2006218cd25039be528c4ed2eaf2adf
     margin-top: 10px;
 }
 
@@ -195,6 +208,7 @@ body {
     }
 
 }
+<<<<<<< HEAD
 
 .imagenTarjeta {
     width: 75%;
@@ -207,10 +221,21 @@ body {
 }
 
 .niveles-container div p {
+=======
+.imagenTarjeta{
+    width: 75%;
+    border-radius: 20px;
+}
+.niveles-container{
+    margin-top: 20px;
+}
+.niveles-container div p{
+>>>>>>> b96cc1e9f2006218cd25039be528c4ed2eaf2adf
     margin-left: auto;
     margin-right: auto;
     width: 75%;
 }
+<<<<<<< HEAD
 
 .div-principal-Niveles {
     margin-top: 20px;
@@ -246,10 +271,34 @@ body {
 }
 
 .container-historia .col-lg-5 img {
+=======
+.div-principal-Niveles{
+    margin-top: 20px;
+    overflow-x: hidden;
+}
+.una{
+    transition: 1s;
+}
+.una:hover{
+    width: 80%;
+}
+.container-historia{
+    margin-top: 10px;
+    overflow-x: hidden;
+}
+.container-historia h2{
+    margin-bottom: 10px;
+}
+.container-historia .col-lg-5{
+    text-align: end;
+}
+.container-historia .col-lg-5 img{
+>>>>>>> b96cc1e9f2006218cd25039be528c4ed2eaf2adf
     border-radius: 25px;
     width: 90%;
     transition: 1s;
 }
+<<<<<<< HEAD
 
 .container-historia .col-lg-5 .unaZ:hover {
     width: 94%;
@@ -274,6 +323,26 @@ body {
 }
 
 .h2-bienvenida {
+=======
+.container-historia .col-lg-5 .unaZ:hover{
+    width: 94%;
+}
+@media(max-width:1024px){
+    .container-historia{
+        margin-bottom: 40px;
+    }
+    .container-historia .col-lg-7 h2{
+        text-align: center;
+    }
+    .container-historia .col-lg-7 p{
+        text-align: center;
+    }
+    .container-historia .col-lg-5{
+        text-align: center;
+    }
+}
+.h2-bienvenida{
+>>>>>>> b96cc1e9f2006218cd25039be528c4ed2eaf2adf
     color: white;
     display: flex;
     justify-content: center;
@@ -281,6 +350,7 @@ body {
     justify-self: center;
     align-self: center;
     height: 100%;
+<<<<<<< HEAD
     font-size: 30px;
     text-shadow: black 0px 0px 3px;
 }
@@ -339,4 +409,8 @@ input[type="submit"]:hover {
 .container-2{
     font-weight: 900;
     font-size: 25px;
+=======
+    font-size: 20px;
+    
+>>>>>>> b96cc1e9f2006218cd25039be528c4ed2eaf2adf
 }
