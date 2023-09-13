@@ -13,32 +13,23 @@ const firebaseConfig = {
   const db = firebase.firestore();
   
   const boton = document.getElementById('enviar');
-  
   boton.addEventListener('click', (e) => {
     e.preventDefault();
     let nombre = document.getElementById('nombre').value
-    let email = document.getElementById('email').value
-    let comentario = document.getElementById('comentarios').value
+    let documento = document.getElementById('documento').value
     // Define los datos que deseas agregar como un objeto
     const data = {
-      Comentario: comentario,
-      Email: email,
+      Documento: documento,
       Nombre: nombre
     };
     db.collection('comentarios').add(data)
       .then((docRef) => {
         console.log(`Documento agregado con ID: ${docRef.id}`);
         Swal.fire({
-          title: `Registro completado con éxito. Le dejamos un nyan cat. Su ticket es: ${docRef.id}`,
-          width: 600,
-          padding: '3em',
-          color: '#716add',
-          backdrop: `
-            rgba(0,0,123,0.4)
-            url("../assets/nyan-cat.gif")
-            left top
-            no-repeat
-          `})
+          icon: 'success',
+          title: 'Formulario',
+          text: `Se envió con éxito! su ticket es: ${docRef.id}`,
+        })
       })
       .catch((error) => {
         console.error('Error al agregar documento: ', error);

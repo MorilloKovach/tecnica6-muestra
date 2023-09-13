@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,0,600;0,700;1,600,0,100&display=swap');
 /*
 0A2647 144272 205295 2C74B3
 6096B4 93BFCF BDCDD6 EEE9DA
@@ -20,6 +19,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    font-style: italic;
 }
 
 .mapa-tecnica {
@@ -88,7 +89,7 @@ body {
 }
 
 .header h2{
-    font-weight: 900;
+    font-weight: 400;
 }
 .carousel {
     width: 100%;
@@ -159,7 +160,7 @@ body {
 
 .nav ul li a {
     color: white;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 27px;
     text-shadow: black 5px 5px 5px 5px;
     text-decoration: none;
@@ -173,7 +174,7 @@ body {
 
 @media(max-width:768px) {
     .header .nav ul {
-        position: fixed;
+        position: absolute;
         top: 0;
         flex-direction: column;
         transform: translateX(-100%);
@@ -202,7 +203,7 @@ body {
 
 .niveles-container {
     margin-top: 20px;
-    font-weight: 800;
+    font-weight: 100;
 }
 
 .niveles-container div p {
@@ -210,13 +211,23 @@ body {
     margin-right: auto;
     width: 75%;
 }
-
+.w-completo{
+    width: 100%;
+}
+.container-informatica{
+    font-weight: 100;
+    overflow-x:scroll;
+}
+main{
+    overflow: hidden;
+}
 .div-principal-Niveles {
     margin-top: 20px;
     overflow-x: hidden;
+    overflow: hidden;
 }
 .div-principal-Niveles h2,h3{
-    font-weight: bold;
+    font-weight: 400;
 }
 .div-principal-Niveles h3{
     margin-top: 15px;
@@ -224,20 +235,40 @@ body {
 .una {
     transition: 1s;
 }
-
+td{
+    list-style: circle;
+    border: solid black 1px;
+}
+th{
+    border: solid black 1px;
+}
+.display-cel{
+    display: none;
+}
+@media(max-width:1000px){
+    .display-cel{
+        display: block;
+    }
+}
+table{
+    overflow-x: scroll;
+    margin: 10px;
+    width: 1000px;
+    text-align: center;
+}
 .una:hover {
     width: 80%;
 }
 
 .container-historia {
     margin-top: 10px;
-    font-weight: 800;
+    font-weight: 100;
     overflow-x: hidden;
 }
 
 .container-historia h2 {
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .container-historia .col-lg-5 {
@@ -274,6 +305,7 @@ body {
 
 .h2-bienvenida {
     color: white;
+    font-family: 'Lexend Deca', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,4 +370,10 @@ input[type="submit"]:hover {
 .container-2{
     font-weight: 900;
     font-size: 25px;
+}
+div:where(.swal2-container) .swal2-html-container{
+    font-weight: 400;
+}
+.titulo-historia h2{
+    margin-top: 10px;
 }
