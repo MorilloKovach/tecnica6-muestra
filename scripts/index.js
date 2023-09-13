@@ -5,7 +5,7 @@ document.getElementById('body').addEventListener('click', (e) => {
     })
     if (e.target.nextElementSibling.firstElementChild.firstElementChild.classList[1] == "borrar") {
       setTimeout(() => {
-        document.querySelectorAll('logo-tecnica').forEach(bor => {
+        document.querySelectorAll('.logo-tecnica').forEach(bor => {
           bor.classList.toggle('borrar')
         })
       },250)
