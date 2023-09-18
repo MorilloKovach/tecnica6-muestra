@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,0,600;0,700;1,600,0,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,0,600;0,700;1,600,0,100,0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap');
 /*
 0A2647 144272 205295 2C74B3
 6096B4 93BFCF BDCDD6 EEE9DA
@@ -140,6 +140,15 @@ body {
 .carousel .next {
     right: 10px;
 }
+tr td{
+    font-weight: 600;
+    margin: 10px;
+    font-size: 16px;
+}
+tr th{
+    font-weight: 900;
+    font-style: normal;
+}
 
 .carousel .prev {
     left: 10px;
@@ -210,6 +219,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
+    font-weight: 600;
 }
 .w-completo{
     width: 100%;
@@ -227,10 +237,13 @@ main{
     overflow: hidden;
 }
 .div-principal-Niveles h2,h3{
-    font-weight: 400;
+    font-weight: 800;
 }
 .div-principal-Niveles h3{
     margin-top: 15px;
+}
+.div-principal-Niveles a{
+    font-weight: 600;
 }
 .una {
     transition: 1s;
@@ -241,6 +254,7 @@ td{
 }
 th{
     border: solid black 1px;
+    font-weight: 900;
 }
 .display-cel{
     display: none;
@@ -265,10 +279,12 @@ table{
     font-weight: 100;
     overflow-x: hidden;
 }
-
+.container-historia p{
+    font-weight: 600;
+}
 .container-historia h2 {
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 .container-historia .col-lg-5 {
@@ -305,6 +321,7 @@ table{
 
 .h2-bienvenida {
     color: white;
+    font-family: 'Lexend Deca', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;

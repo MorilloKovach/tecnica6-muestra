@@ -1,20 +1,36 @@
+/*document.getElementById('barra-menu').addEventListener('click', () => {
+    document.getElementById('menu').classList.toggle('mostrar-menu')
+})
+
+document.getElementById('body').addEventListener('click', (e) => {
+    if (e.target.tagName != "I" && e.target.tagName != "NAV") {
+        document.getElementById('menu').classList.remove('mostrar-menu');
+    }
+})
+*/
 document.getElementById('body').addEventListener('click', (e) => {
   if (e.target.tagName == 'I') {
-    document.querySelectorAll('.menu').forEach(open => {
-      open.classList.toggle('open')
-    })
+    document.getElementsByClassName('menu')[0].classList.toggle('open');
+    document.getElementsByClassName('menu')[1].classList.toggle('open');
+    document.getElementsByClassName('menu')[2].classList.toggle('open');
+    document.getElementsByClassName('menu')[3].classList.toggle('open');
+    document.getElementsByClassName('menu')[4].classList.toggle('open');
     if (e.target.nextElementSibling.firstElementChild.firstElementChild.classList[1] == "borrar") {
       setTimeout(() => {
-        document.querySelectorAll('.logo-tecnica').forEach(bor => {
-          bor.classList.toggle('borrar')
-        })
+        document.getElementsByClassName('logo-tecnica')[0].classList.toggle('borrar')
+        document.getElementsByClassName('logo-tecnica')[1].classList.toggle('borrar')
+        document.getElementsByClassName('logo-tecnica')[2].classList.toggle('borrar')
+        document.getElementsByClassName('logo-tecnica')[3].classList.toggle('borrar')
+        document.getElementsByClassName('logo-tecnica')[4].classList.toggle('borrar')
       },250)
       
     }
     else {
-      document.querySelectorAll('.logo-tecnica').forEach(bor => {
-        bor.classList.toggle('borrar')
-      })
+      document.getElementsByClassName('logo-tecnica')[0].classList.toggle('borrar')
+      document.getElementsByClassName('logo-tecnica')[1].classList.toggle('borrar')
+      document.getElementsByClassName('logo-tecnica')[2].classList.toggle('borrar')
+      document.getElementsByClassName('logo-tecnica')[3].classList.toggle('borrar')
+      document.getElementsByClassName('logo-tecnica')[4].classList.toggle('borrar')
     }
   }
 })
