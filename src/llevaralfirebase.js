@@ -1,4 +1,4 @@
-
+const fecha = new Date();
 const firebaseConfig = {
     apiKey: "AIzaSyDhDH1nL3P2K0GdsYBAGZEKjzZf81n9j2M",
     authDomain: "tecnica6-d8f42.firebaseapp.com",
@@ -22,13 +22,13 @@ const firebaseConfig = {
       Documento: documento,
       Nombre: nombre
     };
-    db.collection('comentarios').add(data)
+    db.collection(`${[fecha.getDate(), fecha.getMonth()+1, fecha.getFullYear()]}`).add(data)
       .then((docRef) => {
         console.log(`Documento agregado con ID: ${docRef.id}`);
         Swal.fire({
           icon: 'success',
           title: 'Formulario',
-          text: `Se envió con éxito! su ticket es: ${docRef.id}`,
+          text: `Se envió con éxito! su ticket es: ${docRef.id}, recuerde sacar captura de pantalla del ticket.`,
         })
       })
       .catch((error) => {
