@@ -229,11 +229,37 @@ main{
 }
 .div-principal-Niveles {
     margin-top: 20px;
-    overflow-x: hidden;
-    overflow: hidden;
 }
 .div-principal-Niveles h2,h3{
     font-weight: 400;
+}
+.div-principal-Niveles .niveles-niveles{
+    margin: 40px 0;
+}
+.div-principal-Niveles .niveles-niveles h2{
+    width: 100%;
+    background-color: #00152b;
+    color: white;
+    max-width: 400px;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 36px;
+    margin: 0 auto;
+}
+.div-principal-Niveles .niveles-niveles h2::before, .div-principal-Niveles .niveles-niveles h2::after{
+    content: '';
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    height: 3px;
+    background-color: #00152b;
+    top: 0.85em;
+}
+.div-principal-Niveles .niveles-niveles h2::before{
+    left: -380px;
+}
+.div-principal-Niveles .niveles-niveles h2::after{
+    right: -380px;
 }
 .div-principal-Niveles h3{
     margin-top: 15px;
@@ -276,18 +302,22 @@ table{
     font-weight: 400;
 }
 
-.container-historia .col-lg-5 {
+.container-historia .col-lg-7 {
     text-align: end;
 }
 
-.container-historia .col-lg-5 img {
-    border-radius: 25px;
-    width: 90%;
+.container-historia .col-lg-7 img {
+    width: 100%;
     transition: 1s;
 }
-
-.container-historia .col-lg-5 .unaZ:hover {
-    width: 94%;
+.container-historia .col-lg-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+.container-historia .col-lg-5 h2{
+    font-size: 50px;
 }
 
 @media(max-width:1024px) {
@@ -295,11 +325,11 @@ table{
         margin-bottom: 40px;
     }
 
-    .container-historia .col-lg-7 h2 {
+    .container-historia .col-lg-5 h2 {
         text-align: center;
     }
 
-    .container-historia .col-lg-7 p {
+    .container-historia .col-lg-5 p {
         text-align: center;
     }
 
@@ -378,4 +408,52 @@ input[type="submit"]:hover {
 }
 .titulo-historia h2{
     margin-top: 10px;
+}
+.planes-de-estudio{
+    margin-top: 40px;
+}
+.plan-estudio{
+    background-color: #00152b;
+    color: white;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 36px;
+    margin: 0 auto;
+}
+.plan-estudio::after, .plan-estudio::before{
+    content: '';
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    height: 3px;
+    background-color: #00152b;
+    top: 0.85em;
+}
+.plan-estudio::before{
+    left: -390px;
+}
+.plan-estudio::after{
+    right: -390px;
+}
+.tarjeta-plan{
+    background-color: #00152b;
+    margin: 10px auto;
+    border-radius: 20px;
+    max-width: 300px;
+    padding: 10px;
+}
+.tarjeta-plan a{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.tarjeta-plan p{
+    margin-top: 10px;
+    color: rgb(112, 112, 112);
+    font-size: 20px;
+}
+.planes-de-estudio .row .informacion{
+    font-size: 25px;
+    margin: 20px 0;
 }
