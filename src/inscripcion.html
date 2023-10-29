@@ -40,18 +40,14 @@
 
     <main>
         <div class="container-2">
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="nombre">Nombre y apellido del alumno: </label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="comentarios">Documento:</label>
-                    <input type="text" id="documento" name="documento">
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Enviar" id="enviar">
-                </div>
+            <form method="POST" action="https://formsubmit.co/escuelatecnica6mails@gmail.com" enctype="multipart/form-data">
+                <input type="email" name="email" placeholder="Ingrese su Email">
+                <input type="text" name="name" id="" placeholder="Ingrese nombre completo del estudiante">
+                <textarea name="message" placeholder="Ingrese documento"></textarea>
+                <input type="file" name="attachment" accept="image/png, image/jpeg">
+                <button type="submit">Enviar!</button>
+                <input type="hidden" name="_next" value="https://tecnica6-muestra.vercel.app/"> 
+                <input type="hidden" name="_captcha" value="false"> 
             </form>
         </div>
     </main>
@@ -83,35 +79,6 @@
     <script>
         AOS.init();
     </script>
-    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js" type="module"></script>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
-
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyDhDH1nL3P2K0GdsYBAGZEKjzZf81n9j2M",
-            authDomain: "tecnica6-d8f42.firebaseapp.com",
-            projectId: "tecnica6-d8f42",
-            storageBucket: "tecnica6-d8f42.appspot.com",
-            messagingSenderId: "93540606388",
-            appId: "1:93540606388:web:9c14750b105ac4a15612e1",
-            measurementId: "G-2ZL78SWS36"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./llevaralfirebase.js" type="module"></script>
 
 </body>
 
