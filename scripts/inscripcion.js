@@ -1,4 +1,3 @@
-localStorage.setItem("confirmacion","false")
 if(localStorage.getItem('confirmacion') == "true"){
     Swal.fire({
         icon:'success',
