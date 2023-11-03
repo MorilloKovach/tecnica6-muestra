@@ -10,7 +10,7 @@ if(localStorage.getItem('confirmacion') == "true"){
     
 }
 else{
-    document.getElementById('segment').addEventListener('click', () => {
+    document.getElementsByTagName('button')[0].addEventListener('click', () => {
         localStorage.setItem("confirmacion","true");
     })
 }
