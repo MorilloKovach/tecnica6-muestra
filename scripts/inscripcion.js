@@ -4,9 +4,7 @@ if(localStorage.getItem('confirmacion') == "true"){
         title:'Envío',
         text:'Se envío con éxito'
     })
-    setTimeout(() => {
-        localStorage.setItem("confirmacion","false");
-    },50000)
+    localStorage.setItem("confirmacion","false");
     
 }
 else{

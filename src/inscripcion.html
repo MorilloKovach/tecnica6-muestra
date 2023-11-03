@@ -40,14 +40,26 @@
 
     <main>
         <div class="container-2">
-            <form method="POST" action="https://formsubmit.co/escuelatecnica6mails@gmail.com" enctype="multipart/form-data">
-                <input type="email" name="email" placeholder="Ingrese su Email">
-                <input type="text" name="name" id="" placeholder="Ingrese nombre completo del estudiante">
-                <textarea name="message" placeholder="Ingrese documento"></textarea>
+            <p>Por favor, rellene los siguientes datos: </p>
+            <form method="POST" action="https://formsubmit.co/escuelatecnica6mails@gmail.com"
+                enctype="multipart/form-data">
+                <p>Apellido y Nombre del Alumno</p>
+                <input type="text" name="name" id="" placeholder="">
+                <p>Email</p>
+                <input type="email" name="email" placeholder="">
+                <p>Documento, junto al año a ingresar</p>
+                <textarea name="message" placeholder=""></textarea>
+                <p>Documento, parte de adelante y atrás (en pdf o documento)</p>
                 <input type="file" name="attachment" accept=".pdf, .doc, .docx">
-                <button type="submit">Enviar!</button>
-                <input type="hidden" name="_next" value="https://tecnica6-muestra.vercel.app/src/inscripcion.html"> 
-                <input type="hidden" name="_captcha" value="false"> 
+                <div>
+                    <button type="submit"><a>Enviar!</a></button>
+                </div>
+                <p>Recordatorio: <span class="negrita">La preinscripción</span> no solo <span class="negrita">no asegura
+                        una vacante</span>, si no que <span class="negrita">quedará en lista de espera.</span> Por eso
+                    mismo, <span class="negrita">le recomendamos asistir presencialmente con el personal de
+                        Secretaría</span></p>
+                <input type="hidden" name="_next" value="https://tecnica6-muestra.vercel.app/src/inscripcion.html">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </main>
@@ -57,7 +69,7 @@
                 <div class="col-lg-6 col-sm-12 contacto-facebook" data-aos="fade-right">
                     <p class="text-center">Ubicación: Centenario 3385 - Isidro Casanova - Provincia de Buenos Aires.</p>
                     <p class="text-center">Secretaría: 4625-3497 | Taller 4625-5963</p>
-                    <p>Siguenos en: <a href="https://www.facebook.com/Tecnica6casanova"><i
+                    <p class="d-flex texto-footer">Siguenos en: <a href="https://www.facebook.com/Tecnica6casanova"><i
                                 class="fa-brands fa-facebook fa-2x"></i></a></p>
                 </div>
                 <div class="col-lg-6 col-sm-12" data-aos="fade-left">
