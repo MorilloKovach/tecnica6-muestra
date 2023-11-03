@@ -515,9 +515,7 @@ input[type="submit"]:hover {
     margin: 20px 0;
 }
 .texto-footer a{
-    text-decoration: none;
     margin-left: 10px;
-    margin-top: 6px;
 }
 .texto-footer{
     flex-wrap: wrap;
