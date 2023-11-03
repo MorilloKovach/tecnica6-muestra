@@ -398,7 +398,7 @@ table{
 .container-2 form textarea{
     max-height: 37.5px;
 }
-.container-2 form div button, a{
+.container-2 form div button, .container-2 form div button a{
     max-width: 200px;
     display: flex;
     margin: 0 auto;
