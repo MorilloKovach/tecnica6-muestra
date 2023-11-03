@@ -1,3 +1,19 @@
+import Swal from "sweetalert2";
+localStorage.setItem("confirmacion","false")
+if(localStorage.getItem('confirmacion') == "true"){
+    Swal.fire({
+        icon:'success',
+        title:'Envío',
+        text:'Se envío con éxito'
+    })
+    localStorage.setItem("confirmacion","false");
+}
+else{
+    document.getElementById('segment').addEventListener('click', () => {
+        localStorage.setItem("confirmacion","true");
+    })
+}
+
 document.getElementById('body').addEventListener('click', (e) => {
     if (e.target.tagName == 'I') {
         document.getElementsByClassName('menu')[0].classList.toggle('open');
