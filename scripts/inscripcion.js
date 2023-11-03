@@ -5,7 +5,10 @@ if(localStorage.getItem('confirmacion') == "true"){
         title:'Envío',
         text:'Se envío con éxito'
     })
-    localStorage.setItem("confirmacion","false");
+    setTimeout(() => {
+        localStorage.setItem("confirmacion","false");
+    },50000)
+    
 }
 else{
     document.getElementById('segment').addEventListener('click', () => {
