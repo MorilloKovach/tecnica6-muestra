@@ -1,4 +1,4 @@
-import Swal from "sweetalert2";
+const Swal = require('sweetalert2')
 localStorage.setItem("confirmacion","false")
 if(localStorage.getItem('confirmacion') == "true"){
     Swal.fire({
