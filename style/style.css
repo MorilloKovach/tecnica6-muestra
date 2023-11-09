@@ -529,7 +529,7 @@ input[type="submit"]:hover {
 }
 .imagen-form{
     position: absolute;
-    transform: translateY(400px);
+    transform: translateY(390px);
 }
 .imagen-form-2{
     left: 0;
@@ -540,26 +540,26 @@ input[type="submit"]:hover {
 
 @media(max-width:1720px){
     .imagen-form-1{
-        transform:translate(100px,400px)
+        transform:translate(100px,390px)
     }
     .imagen-form-2{
-        transform: translate(-100px,400px);
+        transform: translate(-100px,390px);
     }
 }
 @media(max-width:1520px){
     .imagen-form-1{
-        transform:translate(200px,400px)
+        transform:translate(200px,390px)
     }
     .imagen-form-2{
-        transform: translate(-200px,400px);
+        transform: translate(-200px,390px);
     }
 }
 @media(max-width:1279px){
     .imagen-form-1{
-        transform:translate(250px,400px)
+        transform:translate(250px,390px)
     }
     .imagen-form-2{
-        transform: translate(-250px,400px);
+        transform: translate(-250px,390px);
     }
 }
 @media(max-width:1200px){
